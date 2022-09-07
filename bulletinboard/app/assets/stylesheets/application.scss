@@ -1,0 +1,190 @@
+@import "bootstrap";
+
+body {
+    background: #52a9ac54 !important;
+    font-family: inherit;
+    font-size: 14px;
+    nav {
+        .navbar-brand {
+            color: #068084 !important;
+        }
+        #navbarSupportedContent {
+            display: block !important;
+    
+            .navbar-nav {
+                float: right;
+                
+                .nav-link {
+                    color: #000;
+                }
+
+                .dropdown-item:active {
+                    background-color: #52a9ac !important;
+                }
+            }
+        }
+    }
+
+    .content {
+        width: 1000px;
+        margin: auto;
+        padding: 20px 30px 80px 30px;
+
+        .form-title {
+            color: #52a9ac;
+        }
+
+        .card-content {
+            background: #ffffff;
+            box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0;
+
+            p {
+                text-indent: 50px;
+                white-space: pre-wrap;
+                word-break: break-word;
+                line-height: 23px;
+            }
+        }
+
+        .container {
+            max-width: none !important;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            display: inline-block;
+            border-radius: 10px;
+
+            .required:after {
+                content: " *";
+                color: red;
+            }
+
+            .field_with_errors {
+                display: inline;
+            }
+        }
+
+        .post-list-wrapper {
+            margin: 20px 0 0;
+            /* border: 1px solid #52a9ac; */
+            border-radius: 1px;
+            box-shadow: 0 4px 6px 0 rgba(32, 33, 36, 0.28);
+
+            .card-header {
+                padding: 10px;
+                background-color: #52a9ac;
+                display: block;
+
+                h5 {
+                    font-weight: 300;
+                    color: #fff;
+                    margin-bottom: 0;
+
+                    .icon-flag {
+                        margin-top: 5px;
+                    }
+                }
+
+                .last-modified-date {
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+
+            .card-body {
+                background-color: #fff;
+                padding: 10px;
+                display: inline-block;
+                width: 100%;
+                word-break: break-all;
+
+                p {
+                    text-indent: 80px;
+                }
+
+            }
+        }
+
+        .submit-btn-div {
+            width: 100%;
+            display: inline-block;
+            text-align: right;
+        }
+
+        .btn {
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        .submit-btn {
+            background-color: #52a9ac;
+            margin-left: 10px;
+            border: 1px solid #fff !important;
+        }
+
+        .cancel-btn {
+            background-color: #746f6f91;
+        }
+
+        .delete-btn {
+            margin-left: 10px;
+            background-color: #cc2222;
+        }
+
+        .delete-icon {
+            color: red;
+        }
+
+        .pwd-edit-btn {
+            color: #52a9ac;
+            border: 1px solid #52a9ac;
+            margin-left: 15px;
+        }
+
+
+        // post navigation bar
+        .posts-nav {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+
+            .post-filter,
+            .post-search,
+            .post-count {
+                display: inline-block;
+            }
+
+            .post-search {
+                .post-filter-div {
+                    width: 200px;
+                    display: inline-block;
+                    background-color: #fff;
+
+                    .form-control {
+                        display: inline-block;
+                        width: 80%;
+                        border: none;
+                    }
+                    .search-icon {
+                        float: right;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .btn {
+                float: right;
+            }
+        }
+    }
+
+    .error-msg {
+        color: red;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
